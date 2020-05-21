@@ -1,0 +1,10 @@
+{
+    "setlist": {
+        "person": {"probability": "0.04"},
+        "bicycle": {"probability": "0.05"}
+    },
+    "camera_id": "rtsp://~",
+    "show_fps": "true",
+    "rotation": "0",
+    "flag_box": "true"
+}

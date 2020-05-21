@@ -1,0 +1,51 @@
+*{margin: 0; padding: 0;}
+
+main{padding-top: 58px;}
+
+.setting-list{
+	border: 1px solid #666666;
+	height: 30vh;
+	overflow-y: scroll;
+	margin: 1rem .5rem;
+	padding: .5rem;
+}
+
+.rotation-list{
+	border: 1px solid #666666;
+	margin: 1rem .5rem;
+	padding: .5rem;
+}
+
+.fps-list{
+	border: 1px solid #666666;
+	overflow-y: scroll;
+	margin: 1rem .5rem;
+	padding: .5rem;
+}
+
+.threshold-list{
+	border: 1px solid #666666;
+	margin: 1rem .5rem;
+	padding: .5rem;
+}
+
+.setting_space{
+	border: 1px solid #666666;
+	height: 80vh;
+	overflow-y: scroll;
+	margin: 1rem .5rem;
+	padding: .5rem;
+}
+
+.movie-space{
+	border: 1px solid #666666;
+	width: 95%;
+	height: 80vh;
+	overflow-y: scroll;
+	margin: 1rem .5rem;
+	padding: .5rem;
+}
+
+.mysettings{
+	padding-bottom: 1rem;
+}

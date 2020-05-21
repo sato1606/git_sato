@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+	<title>camera_test</title>
+
+	<!-- BootstrapのCSS読み込み -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <!-- BootstrapのJS読み込み -->
+    <script src="./js/bootstrap.min.js"></script>
+	<!-- アイコン読み込み -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+	<!-- ヘッダー読み込み -->
+    <link href="./css/luxbar.min.css" rel="stylesheet">
+	<!-- フェードイン -->
+    <script type="text/javascript" src="./js/fadeinicon.js"></script>
+
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script src="./js/main.js" charset="utf-8"></script>
+
+</head>
+<body>
+	<!-- <header id="luxbar" class="luxbar-fixed">
+	    <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox"/>
+	    <div class="luxbar-menu luxbar-menu-right luxbar-menu-material-cyan">
+	        <ul class="luxbar-navigation">
+	            <li class="luxbar-header">
+	                <a href="#" class="luxbar-brand">Trimy（仮）</a>
+	                <label class="luxbar-hamburger luxbar-hamburger-doublespin" id="luxbar-hamburger" for="luxbar-checkbox"><span></span></label>
+	            </li>
+	            <li class="luxbar-item"><a href="#">Item 1</a></li>
+	            <li class="luxbar-item"><a href="#">Item 2</a></li>
+	            <li class="luxbar-item"><a href="#">Item 3</a></li>
+	            <li class="luxbar-item"><a href="#">Item 4</a></li>
+	        </ul>
+	    </div>
+	</header> -->
+
+	<main>
+		<div class="container-fluid">
+        	<div class="row">
+            	<div class="col-lg-4">
+            		<div id="setform">
+            			<div class="setting-list">
+            				<script type="text/javascript">
+	            				data = ['person','bicycle','car','motorcycle','airplane','bus','train','truck','boat','traffic light','fire hydrant','street sign','stop sign','parking meter','bench','bird','cat','dog','horse','sheep','cow','elephant','bear','zebra','giraffe','hat','backpack','umbrella','shoe','eye glasses','handbag','tie','suitcase','frisbee','skis','snowboard','sports ball','kite','baseball bat','baseball glove','skateboard','surfboard','tennis racket','bottle','plate','wine glass','cup','fork','knife','spoon','bowl','banana','apple','sandwich','orange','broccoli','carrot','hot dog','pizza','donut','cake','chair','couch','potted plant','bed','mirror','dining table','window','desk','toilet','door','tv','laptop','mouse','remote','keyboard','cell','phone','microwave','oven','toaster','sink','refrigerator','blender','book','clock','vase','scissors','teddy bear','hair drier','toothbrush','hair brush']
+
+	            				for (var i=0;i<data.length;i++){
+	            					// document.write("<p>"+ data[i] + "</p>")
+	            					document.write(
+	            						'<div class="mysettings">',
+	            							'<p>'+data[i]+'</p>',
+	            							'<input type="number" id="threshold'+i+'" step="0.01" min="0" max="1">',
+	            						'</div>'
+	            					)
+	            					// document.write('<input type="checkbox" name="setlist'+i+'" value="'+ data[i] +'">'+data[i]+'<br>')
+	            				}
+	            			</script>
+	            		</div>
+
+
+	            		<div class="rotation-list">
+	            			<h5>回転の角度</h5>
+	            			<p>カメラの回転の角度を設定します</p>
+	            			<select name="rotation">
+								<option value="m180">-180</option>
+								<option value="m90">-90</option>
+								<option value="0" selected>0</option>
+								<option value="p90">90</option>
+								<option value="p180">180</option>
+							</select>
+	            		</div>
+
+
+	            		<div class="fps-list">
+	            			<h5>FPS表示の有無</h5>
+	            			<p>動画中にFPSを表示するかどうかを選択します</p>
+	            			<input type="radio" name="show_fps" value="true" checked>アリ
+							<input type="radio" name="show_fps" value="false">ナシ
+	            		</div>
+
+	            		<div class="fps-list">
+	            			<h5>バウンディングボックス表示の有無</h5>
+	            			<p>動画中にバウンディングボックスを表示するかどうかを選択します</p>
+	            			<input type="radio" name="flag_box" value="true" checked>アリ
+							<input type="radio" name="flag_box" value="false">ナシ
+	            		</div>
+
+	            		<button id="send">送信</button>
+	            	</div>
+            	</div>
+
+            	<div class="col-lg-8">
+            		<div class="movie-space">
+            			<?php echo htmlspecialchars($json, ENT_QUOTES, 'UTF-8'); ?>
+
+						
+            			
+            		</div>
+            	</div>
+        	</div>
+    	</div>
+	</main>
+
+	<footer></footer>
+</body>
+</html>
